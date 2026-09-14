@@ -110,4 +110,5 @@ jobs:
         with:
           path: docs
       - id: deployment
+        if: ${{ github.event.repository.has_pages }}
         uses: actions/deploy-pages@v4
